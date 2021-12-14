@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 7.4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите скорость первого автомобиля: ");
+            double v1 = double.Parse(Console.ReadLine());
+            if(v1<1)
+            {
+                Console.WriteLine("Введено некорректное значение!");
+                return;
+            }
+            Console.WriteLine("Введите скорость второго автомобиля: ");
+            double v2 = double.Parse(Console.ReadLine());
+            if (v2<1)
+            {
+                Console.WriteLine("Введено некорректное значение!");
+                return;
+
+            }           
+            Console.WriteLine("Введите расстояние между автомобилями: ");
+            double s = double.Parse(Console.ReadLine());
+            if (s < 0)
+            {
+                Console.WriteLine("Введено некорректное значение!");
+                return;
+            }
+            Console.WriteLine("Введите T часов: ");
+            double t = double.Parse(Console.ReadLine());
+            if (t < 1)
+            {
+                Console.WriteLine("Введено некорректное значение!");
+                return;
+            }
+            double r1 = v1 * t;
+            double r2 = v2 * t; 
+
+
+            Console.Write("Расстояние между ними будет: ");
+            Console.WriteLine(r1+r2+s );
+
+        }
+
+    }
+}
