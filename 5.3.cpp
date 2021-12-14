@@ -9,7 +9,7 @@ int main()
     double A, B, C, AC, BC, x;
     cout << "Введите A, B, C" << endl;
     cin >> A >> B >> C;
-    if ((A > C and C > B) or (A < C and C < B))
+    ((A > C and C > B) or (A < C and C < B))
         {
         AC = abs(A - C);
         BC = abs(B - C);
