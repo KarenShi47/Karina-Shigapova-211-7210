@@ -19,10 +19,5 @@ int main()
 
         }
 
-     else
-        {
-        cout << "не может быть по условию";
-        }
-
-        return 0;
+     return 0;
 }
