@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 7.5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            double a = 1;
+            if(a == 0)
+            {
+                Console.WriteLine("Введено некоректное значение");
+                return;
+            }
+            double b = -1;
+            double minb = 1;
+            Console.WriteLine("Введите x:");
+            double x = double.Parse(Console.ReadLine());
+            minb = a * x ;
+            if (minb == 0)
+            {
+                Console.WriteLine("Уравнение решено!");
+            }
+            else
+                Console.WriteLine("Уравнение не имеет корней!");
+
+            
+            
+            
+            
+            
+        }
+
+    }
+}
