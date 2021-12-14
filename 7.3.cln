@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 7.3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите X киллограмм конфет: ");
+            double x = double.Parse(Console.ReadLine());
+            if (x < 1)
+            {
+                Console.WriteLine("Введено некорректное значение!");
+                return;
+            }
+            Console.WriteLine("Введите стоимость X киллограмма конфет: ");
+            double a = double.Parse(Console.ReadLine());
+            if (a < 1)
+            {
+                Console.WriteLine("Введено некорректное значение!");
+                return;
+            }
+            double kg = 1 / x * a;
+            Console.WriteLine("Киллограмм стоит: " + kg);
+            Console.WriteLine("Введите Y киллограмм конфет:");
+            double y = double.Parse(Console.ReadLine());
+            if(y<1)
+            {
+                Console.WriteLine("Введено некорректное значение!");
+                return;
+            }
+            Console.WriteLine("Y киллограмм конфет будет стоить: " + y * kg);
+        }
+
+    }
+}
