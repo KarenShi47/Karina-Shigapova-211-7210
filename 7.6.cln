@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace 7.6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            double a1 = 2;
+            double a2 = 3;
+            double b1 = 3;
+            double b2 = 4;
+            double c1 = 1;
+            double c2 = 2;
+            double d = a1 * b2 - a2 * b1;
+            double x = (c1 * b2 - c2 * b1) / d;
+            double y = (a1 * c2 - a2 * c1) / d;
+            Console.WriteLine("x = " + x);
+            Console.WriteLine("y = " + y);
+        }
+
+    }
+}
