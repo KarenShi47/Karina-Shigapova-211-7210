@@ -9,15 +9,11 @@ int main()
     double A, B, C, AC, BC, x;
     cout << "Введите A, B, C" << endl;
     cin >> A >> B >> C;
-    ((A > C and C > B) or (A < C and C < B))
-        {
-        AC = abs(A - C);
-        BC = abs(B - C);
-        x = AC*BC;
-        cout << "AC = " << AC << endl << "BC = " << BC << endl;
-        cout << "AC*BC = " << x;
+    AC = abs(A - C);
+    BC = abs(B - C);
+    x = AC*BC;
+    cout << "AC = "<< AC << endl << "BC = " << BC << endl;
+    cout << "Произведение = " << x;
 
-        }
-
-     return 0;
+    return 0;
 }
