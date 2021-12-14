@@ -6,7 +6,7 @@ int main()
 {
     setlocale(LC_ALL, "Russian");
     int a, b, S, P;
-    cout << "Ââåäèòå a è b" << endl;
+    cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ a Ð¸ b" << endl;
     cin >> a >> b;
     cout << "S =" << a * b << endl<< "P ="<< a + b;
     return 0;
