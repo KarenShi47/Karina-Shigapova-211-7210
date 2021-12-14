@@ -11,6 +11,6 @@ int main()
     cout <<"Диаметр окружности d:";
     cin >> d;
     L= 3.14*d;
-    cout << "L=" << L;
+    cout << "L = " << L;
     return 0;
 }
