@@ -1,4 +1,4 @@
-#include <iostream>
+/* #include <iostream>
 #include <math.h>
 
 using namespace std;
@@ -21,4 +21,32 @@ int main()
     else
         cout << "К точке А ближе находится точка C. Расстояние от А до C равно: " << AC;
             
-        }
+        } */
+
+#include <iostream>
+#include <math.h>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Russian");
+    double a, b, c, a1, a2, b1, b2, c1, c2, B, C, AB, AC;
+    cout << " Введите координаты точки А " << endl;
+    cin >> a1 >> a2;
+    cout << " Введите координаты точки B " << endl;
+    cin >> b1 >> b2;
+    cout << " Введите координаты точки C " << endl;
+    cin >> c1 >> c2;
+    AB = sqrt(pow(b1 - a1, 2) + pow(b2 - a2, 2));
+    AC = sqrt(pow(c1 - a1, 2) + pow(c2 - a2, 2));
+    if (AB < AC)
+    {
+        cout << "К точке А ближе находится точка В. Расстояние от А до В равно: " << AB;
+    }
+    else if (AC < AB)
+    {
+        cout << "К точке А ближе находится точка C. Расстояние от А до C равно: " << AC;
+    }
+    return 0;
+}
