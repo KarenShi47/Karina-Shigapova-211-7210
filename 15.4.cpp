@@ -26,6 +26,8 @@ int Quarter(float x, float y)
 int main()
 
 {
+    setlocale(LC_ALL, "Russian");
+    cout << "Введите координаты" << endl;
     float x1, y1, x2, y2, x3, y3;
     cin >> x1 >> y1 >> x2 >> y2 >> x3 >> y3;
     cout << Quarter(x1, y1) << endl;
