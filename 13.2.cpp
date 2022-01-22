@@ -15,3 +15,4 @@ int main()
             cout << "N равно " << ans << "\n\n";
 
         }
+ispravit
