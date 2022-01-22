@@ -5,15 +5,17 @@ using namespace std;
 int main()
 
 {
+	setlocale(LC_ALL, "Russian");
 	int n;
+	cout << "Введите число" << endl;
 	cin >> n;
-	int *arr = new int[n];
+	int* arr = new int[n];
 	for (int i = 0; i < n; i++)
 	{
-	    arr[i] = i + 1;
+		arr[i] = i + 1;
 	}
 	for (int i = 0; i < n; i = i + 2)
-    {
+	{
 		cout << arr[i] << endl;
 	}
 	if (n % 2 == 1)
@@ -24,6 +26,6 @@ int main()
 	{
 		cout << arr[i] << endl;
 	}
-    delete[] arr;
+	delete[] arr;
 	return 0;
 }
