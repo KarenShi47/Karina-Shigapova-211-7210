@@ -3,16 +3,17 @@
 using namespace std;
 
 int main()
-{   setlocale(LC_ALL, "Russian");
-    double n, ans, i;
-	cout << "Введите целое число N:\n";
-            cin >> n;
-            ans = 1;
-            for (i = 1; i < n; i += 0.1) {
-                ans *= i;
-            }
-            ans *= n;
-            cout << "N равно " << ans << "\n\n";
-
-        }
-ispravit
+{
+    setlocale(LC_ALL, "Russian");
+	int n, x = 0;
+	double y = 1, a = 1.0;
+	cout << "Введите N: " << endl;
+	cin >> n;
+	while (x < n)
+	{
+		x = x + 1;
+		a = a + 0.1;
+		y = y * a;
+	}
+	cout << y;
+}
