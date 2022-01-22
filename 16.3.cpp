@@ -5,9 +5,11 @@ using namespace std;
 int main()
 
 {
+	setlocale(LC_ALL, "Russian");
 	int n, a, b, x = 0;
+	cout << "Введите числа" << endl;
 	cin >> n >> a >> b;
-	int *arr = new int[n];
+	int* arr = new int[n];
 	arr[0] = a;
 	arr[1] = b;
 	cout << arr[0] << endl;
@@ -22,6 +24,6 @@ int main()
 		x = 0;
 		cout << arr[i + 2] << endl;
 	}
-    delete[] arr;
+	delete[] arr;
 	return 0;
 }
