@@ -22,6 +22,8 @@ int Sign(float x)
 int main()
 
 {
+    setlocale(LC_ALL, "Russian");
+    cout << "Введите числа А и В" << endl;
     float a, b;
     cin >> a >> b;
     cout << Sign(a) + Sign(b);
